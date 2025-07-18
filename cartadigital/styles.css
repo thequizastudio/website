@@ -236,12 +236,8 @@ hr {
   color: #0B1E36;
 }
 
-.precio-cta-lead {
-  font-weight: 500;
-  color: #0B1E36;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
+.ml-form-align-left {  /* alinear el formulario en el centro */
+    text-align: center;
 
 /* Accessible helper class */
 .sr-only {
