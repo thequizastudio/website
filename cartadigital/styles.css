@@ -1,14 +1,21 @@
 /* Importa Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;700&family=Montserrat:wght@800&display=swap');
 
+/* Variables */
+:root {
+  --color-primary: #0B1E36;
+  --color-light: #FDFDFD;
+  --color-bg: #FAFAFA;
+  --color-accent: #F2B441;
+  --color-gray: #D9D9D9;
+}
 
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
   font-family: 'DM Sans', sans-serif;
-  color: #0B1E36;
-  background-color: #FAFAFA;
+  color: var(--color-primary);
+  background-color: var(--color-bg);
 }
 
 main {
@@ -23,7 +30,7 @@ section {
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  color: #0B1E36;
+  color: var(--color-primary);
 }
 
 h1 {
@@ -43,7 +50,6 @@ p {
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.6;
-  color: #0B1E36;
 }
 
 strong, b {
@@ -53,8 +59,8 @@ strong, b {
 /* HEADER */
 .main-header {
   width: 100%;
-  background-color: #0B1E36;
-  color: #FDFDFD;
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 
 .header-content {
@@ -71,9 +77,9 @@ strong, b {
 }
 
 .btn-example {
-  background-color: #F2B441;
-  color: #0B1E36;
-  border: 1px solid #F2B441;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  border: 1px solid var(--color-accent);
   padding: 0.5em 1.2em;
   text-decoration: none;
   border-radius: 40px;
@@ -82,16 +88,16 @@ strong, b {
 }
 
 .btn-example:hover {
-  background-color: #D9D9D9;
-  color: #0B1E36;
-  border-color: #D9D9D9;
+  background-color: var(--color-gray);
+  color: var(--color-primary);
+  border-color: var(--color-gray);
 }
 
 .main-text {
   padding: 6rem;
   max-width: 650px;
   font-size: 4rem;
-  color: #FDFDFD;
+  color: var(--color-light);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -106,7 +112,6 @@ strong, b {
 .beneficios-title {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 0 1rem;
 }
 
 .beneficios-content {
@@ -120,13 +125,6 @@ strong, b {
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #0B1E36;
-  max-width: 100%;
-}
-
-.beneficios-img {
-  width: 100%;
-  max-width: 350px;
 }
 
 .beneficios-img img {
@@ -145,27 +143,21 @@ strong, b {
 
 .caracteristica-info {
   padding: 2rem 0;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid var(--color-gray);
 }
 
 .caracteristica-name {
   font-weight: 800;
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
-  color: #0B1E36;
   font-family: 'Montserrat', sans-serif;
-}
-
-.caracteristica-desc {
-  color: #0B1E36;
 }
 
 /* PRECIOS */
 #precio {
-  background-color: #FDFDFD;
-  border: solid 2px #F2B441;
+  background-color: var(--color-light);
+  border: solid 2px var(--color-accent);
   padding: 6rem 2rem;
-  color: #0B1E36;
 }
 
 #tabla-precios {
@@ -173,14 +165,9 @@ strong, b {
   margin: 0 auto;
 }
 
-.precio-title h1 {
-  text-align: center;
-}
-
+.precio-title h1,
 .precio-title p {
   text-align: center;
-  color: #0B1E36;
-  margin-bottom: 2rem;
 }
 
 .precio-info {
@@ -200,23 +187,19 @@ strong, b {
   font-size: 1.2rem;
 }
 
-/* Divider line */
 hr {
   border: none;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid var(--color-gray);
   margin: 1rem 0 2rem;
 }
 
 /* CTA DENTRO DE PRECIO */
 .precio-cta {
-  margin-top: 4rem;
   text-align: center;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;  
-  margin-top: 2rem;
+  margin: 2rem auto 0;
   padding: 3rem 2rem;
-  background: #FFFFFF;
+  background: var(--color-light);
   border: 1px solid #E6E6E6;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.06);
@@ -224,7 +207,7 @@ hr {
 
 .precio-cta .ml-embedded {
   display: flex;
-  justify-content: center; /* Centra el formulario horizontalmente */
+  justify-content: center;
   margin-top: 1rem;
 }
 
@@ -233,19 +216,21 @@ hr {
   font-weight: 800;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #0B1E36;
 }
 
-.ml-form-align-left {  /* alinear el formulario en el centro */
-    text-align: center;
+.ml-form-align-left {
+  text-align: center;
+}
 
-/* Accessible helper class */
 .sr-only {
   position: absolute !important;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
-  clip: rect(0 0 0 0); clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   border: 0;
 }
 
@@ -257,7 +242,7 @@ hr {
 }
 
 .acordeon-item {
-  border-top: 1px solid #0B1E36;
+  border-top: 1px solid var(--color-primary);
 }
 
 .acordeon-titulo {
@@ -269,7 +254,7 @@ hr {
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  color: #0B1E36;
+  color: var(--color-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -289,8 +274,8 @@ hr {
 footer {
   text-align: center;
   padding: 2rem;
-  background-color: #0B1E36;
-  color: #FDFDFD;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   font-size: 0.9rem;
   margin-top: 4rem;
 }
@@ -304,7 +289,7 @@ footer {
   }
 
   .main-text {
-    padding: 0rem 3rem 3rem 3rem;
+    padding: 0 3rem 3rem;
     font-size: 3rem;
     text-align: center;
   }
@@ -312,12 +297,6 @@ footer {
   .beneficios-content {
     flex-direction: column;
     gap: 2rem;
-  }
-
-  .beneficios-text,
-  .beneficios-img {
-    width: 100%;
-    text-align: center;
   }
 
   .header-title {
