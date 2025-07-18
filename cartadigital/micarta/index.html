@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Trattoria del Bosque - Carta</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Añadido para destacar menú activo */
+    .menu-links a.active {
+      background-color: #bfa16a;
+      color: #fff;
+      border-color: #bfa16a;
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="floating-cta">
+    ¿Quieres una carta digital como esta?
+  </a>
+
+  <header>
+    <img src="img/logo.jpg" alt="Logo La Trattoria del Bosque" class="logo"/>
+    <p class="subtitle">Nuestra carta</p>
+  </header>
+
+  <nav class="menu-nav">
+    <div class="menu-links">
+      <a href="#entrantes" class="active">Entrantes</a>
+      <a href="#principales">Principales</a>
+      <a href="#postres">Postres</a>
+      <a href="#bebidas">Bebidas</a>
+      <a href="#vinos">Vinos</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="entrantes" class="menu-section">
+      <h2>Entrantes</h2>
+      <ul>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Bruschetta de Tomate y Albahaca</span>
+            <p class="dish-desc">Rebanadas de pan artesanal tostado con tomate fresco, ajo, albahaca y un toque de aceite de oliva virgen extra.</p>
+          </div>
+          <span class="price">7.50€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Carpaccio de Ternera</span>
+            <p class="dish-desc">Láminas finas de ternera con rúcula, parmesano y aliño de limón y aceite de oliva.</p>
+          </div>
+          <span class="price">9.80€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Ensalada Caprese</span>
+            <p class="dish-desc">Tomate, mozzarella fresca, albahaca y reducción de balsámico.</p>
+          </div>
+          <span class="price">8.20€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Sopa Minestrone</span>
+            <p class="dish-desc">Sopa italiana con verduras frescas, pasta y caldo casero.</p>
+          </div>
+          <span class="price">6.50€</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="principales" class="menu-section" style="display:none">
+      <h2>Platos Principales</h2>
+      <ul>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Risotto de Setas Silvestres</span>
+            <p class="dish-desc">Arroz cremoso con mezcla de setas frescas, parmesano y un toque de trufa.</p>
+          </div>
+          <span class="price">16.50€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Pasta al Pesto Genovés</span>
+            <p class="dish-desc">Penne con salsa pesto, piñones tostados y queso parmesano rallado.</p>
+          </div>
+          <span class="price">14.00€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Pollo a la Parmesana</span>
+            <p class="dish-desc">Pechuga de pollo empanada con salsa de tomate y queso gratinado.</p>
+          </div>
+          <span class="price">17.20€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Lasagna Clásica</span>
+            <p class="dish-desc">Capas de pasta, carne, bechamel y queso gratinado.</p>
+          </div>
+          <span class="price">15.80€</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="postres" class="menu-section" style="display:none">
+      <h2>Postres</h2>
+      <ul>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Tiramisú Clásico</span>
+            <p class="dish-desc">Postre italiano de queso mascarpone, café y cacao.</p>
+          </div>
+          <span class="price">6€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Panna Cotta con Frutos Rojos</span>
+            <p class="dish-desc">Delicada panna cotta servida con salsa de frutos rojos frescos.</p>
+          </div>
+          <span class="price">6.50€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Helado Artesanal</span>
+            <p class="dish-desc">Selección de sabores: vainilla, chocolate o pistacho.</p>
+          </div>
+          <span class="price">5€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Cannoli Siciliani</span>
+            <p class="dish-desc">Tubo crujiente relleno de ricotta y pedacitos de chocolate.</p>
+          </div>
+          <span class="price">6.80€</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="bebidas" class="menu-section" style="display:none">
+      <h2>Bebidas</h2>
+      <ul>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Copa de Vino Tinto</span>
+            <p class="dish-desc">Selección de vinos tintos de la casa.</p>
+          </div>
+          <span class="price">4€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Copa de Vino Blanco</span>
+            <p class="dish-desc">Vinos blancos frescos y aromáticos.</p>
+          </div>
+          <span class="price">4€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Agua Mineral</span>
+            <p class="dish-desc">Agua con o sin gas.</p>
+          </div>
+          <span class="price">2.50€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Refrescos</span>
+            <p class="dish-desc">Coca-Cola, Fanta, Sprite.</p>
+          </div>
+          <span class="price">3€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Café Espresso</span>
+            <p class="dish-desc">Café intenso y aromático.</p>
+          </div>
+          <span class="price">2.50€</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="vinos" class="menu-section" style="display:none">
+      <h2>Vinos</h2>
+      <ul>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Vino Tinto Reserva</span>
+            <p class="dish-desc">Vino de reserva seleccionado con notas intensas y cuerpo robusto.</p>
+          </div>
+          <span class="price">20€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Vino Blanco Crianza</span>
+            <p class="dish-desc">Blanco con cuerpo, con aromas frutales y florales.</p>
+          </div>
+          <span class="price">18€</span>
+        </li>
+        <li>
+          <div class="dish-info">
+            <span class="dish-name">Rosado Fresco</span>
+            <p class="dish-desc">Vino rosado ligero, ideal para aperitivos.</p>
+          </div>
+          <span class="price">16€</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-name">La Trattoria del Bosque</p>
+    <p>Calle Roble 42 · 28015 Madrid</p>
+    <p>&copy; 2025 La Trattoria del Bosque</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.menu-section');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+
+      // Actualizar el estado activo del menú
+      document.querySelectorAll('.menu-links a').forEach(link => {
+        if (link.getAttribute('href').substring(1) === sectionId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    // Añadir evento click a los enlaces para manejar la navegación
+    document.querySelectorAll('.menu-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        showSection(targetId);
+      });
+    });
+  </script>
+</body>
+</html>
