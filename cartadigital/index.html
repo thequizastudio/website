@@ -193,44 +193,45 @@
     &copy; 2025 The QUIZA STUDIO | thequizastudio@proton.me | CARTA DIGITAL PARA RESTAURANTES
   </footer>
 
-<!-- Script acordeon -->
-  <script>
-    const acordeonTitulos = document.querySelectorAll(".acordeon-titulo");
+<script>
+(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+.push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+ml('account', '1393450');
+</script>
+<!-- End MailerLite Universal -->
 
-    acordeonTitulos.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const item = btn.parentElement;
-        const contenido = item.querySelector(".acordeon-contenido");
-        const icon = btn.querySelector(".acordeon-icon");
+<!-- Script acordeón -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const acordeonTitulos = document.querySelectorAll(".acordeon-titulo");
 
-        const abierto = contenido.style.maxHeight;
+  acordeonTitulos.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const item = btn.parentElement;
+      const contenido = item.querySelector(".acordeon-contenido");
+      const icon = btn.querySelector(".acordeon-icon");
 
-        // Cierra todos los ítems primero
-        document.querySelectorAll(".acordeon-contenido").forEach(c => {
-          c.style.maxHeight = null;
-        });
-        document.querySelectorAll(".acordeon-icon").forEach(i => {
-          i.textContent = "+";
-        });
+      const abierto = contenido.style.maxHeight;
 
-        // Si no estaba abierto, lo abre
-        if (!abierto || abierto === "0px") {
-          contenido.style.maxHeight = contenido.scrollHeight + "px";
-          icon.textContent = "−";
-        }
+      // Cierra todos los ítems primero
+      document.querySelectorAll(".acordeon-contenido").forEach(c => {
+        c.style.maxHeight = null;
       });
+      document.querySelectorAll(".acordeon-icon").forEach(i => {
+        i.textContent = "+";
+      });
+
+      // Si no estaba abierto, lo abre
+      if (!abierto || abierto === "0px") {
+        contenido.style.maxHeight = contenido.scrollHeight + "px";
+        icon.textContent = "−";
+      }
     });
-  </script>
-  
-  <!-- MailerLite Universal -->
-      <script>
-        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-        ml('account', '1393450');
-    </script>
-    <!-- End MailerLite Universal -->
+  });
+});
+</script>
 
 </body>
 </html>
