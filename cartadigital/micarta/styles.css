@@ -9,7 +9,7 @@ body {
 header {
   text-align: center;
   padding: 30px 20px;
-  background-color: #4e5b31;
+  background-color: #4a5434;
   border-bottom: 3px solid #bfa16a;
 }
 
@@ -43,6 +43,14 @@ header {
 .menu a:hover {
   color: #bfa16a;
   cursor: pointer;
+}
+
+.telephone {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #f7f3e9;
+  margin: 15px 0 10px;
 }
 
 .subtitle {
