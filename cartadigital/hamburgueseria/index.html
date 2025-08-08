@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smash&Go - Nuestra Carta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --main-color: #3f51b5; /* Azul moderno */
+      --bg-dark: #1f1f1f;
+      --text-light: #ffffff;
+      --text-muted: #999999;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    header .content {
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    header h2 {
+      font-size: 1.8rem;
+      margin-top: 10px;
+    }
+
+    .accordion {
+      max-width: 800px;
+      margin: 60px auto;
+      background: transparent; /* fondo como el body */
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .accordion-header {
+      padding: 20px;
+      cursor: pointer;
+      background-color: var(--main-color);
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .accordion-header::before {
+      content: '+';
+      font-size: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .accordion-header.active::before {
+      content: '–';
+      transform: rotate(180deg);
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px 25px;
+      background-color: transparent;
+    }
+
+    .accordion-content ul {
+      list-style: none;
+    }
+
+    .accordion-content li {
+      margin-bottom: 18px;
+    }
+
+    .accordion-content strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--main-color);
+    }
+
+    .tags {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .credit {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="content">
+      <h1>Smash&Go</h1>
+      <p>Teléfono: 654 321 987</p>
+      <h2>Nuestra Carta</h2>
+    </div>
+  </header>
+
+  <div class="accordion">
+
+    <div class="accordion-item">
+      <div class="accordion-header">Hamburguesas</div>
+      <div class="accordion-content">
+        <ul>
+          <li>
+            <strong>Smash Classic - 9,90€</strong>
+            Pan brioche, doble carne smash, queso cheddar, pepinillos, cebolla, salsa especial.
+            <div class="tags">Contiene gluten, lácteos</div>
+          </li>
+          <li>
+            <strong>Beyond Vegan - 10,50€</strong>
+            Hamburguesa vegetal Beyond, lechuga, tomate, cebolla roja, vegan mayo.
+            <div class="tags">Opción vegana, sin lactosa</div>
+          </li>
+          <li>
+            <strong>Chicken Crunch - 8,90€</strong>
+            Crujiente de pollo, lechuga, mostaza y miel, queso gouda.
+            <div class="tags">Contiene gluten, lácteos, huevo</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Ensaladas</div>
+      <div class="accordion-content">
+        <ul>
+          <li>
+            <strong>César Smash - 7,50€</strong>
+            Lechuga romana, pollo grillado, croutons, parmesano, salsa césar.
+            <div class="tags">Contiene gluten, lácteos, huevo</div>
+          </li>
+          <li>
+            <strong>Green Vegan Bowl - 7,90€</strong>
+            Mezclum, aguacate, quinoa, tomate cherry, garbanzos, vinagreta.
+            <div class="tags">Vegano, sin gluten</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Bebidas</div>
+      <div class="accordion-content">
+        <ul>
+          <li>
+            <strong>Refrescos - 2,00€</strong>
+            Coca-Cola, Fanta, Sprite, Nestea...
+          </li>
+          <li>
+            <strong>Cerveza artesanal - 3,50€</strong>
+            Selección local de cervezas.
+            <div class="tags">Consultar opciones sin gluten</div>
+          </li>
+          <li>
+            <strong>Batido de Oreo - 4,50€</strong>
+            Leche, helado de vainilla, galleta Oreo.
+            <div class="tags">Contiene lácteos, gluten</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Postres</div>
+      <div class="accordion-content">
+        <ul>
+          <li>
+            <strong>Brownie con helado - 4,80€</strong>
+            Brownie de chocolate casero con bola de vainilla.
+            <div class="tags">Contiene gluten, huevo, lácteos</div>
+          </li>
+          <li>
+            <strong>Cheesecake vegano - 5,00€</strong>
+            Base de frutos secos, crema de anacardos y frutas.
+            <div class="tags">Vegano, sin gluten</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p><strong>Smash&Go</strong></p>
+    <p>📞 654 321 987</p>
+    <p>📍 Calle del Sabor, 99 - Ciudad Burguer</p>
+    <div class="credit">
+      @Smash&Go | Desarrollado por <a href="#">TheQuizaStudio</a>
+    </div>
+  </footer>
+
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const currentlyOpen = document.querySelector('.accordion-header.active');
+        const currentlyVisible = document.querySelector('.accordion-content.show');
+
+        if (currentlyOpen && currentlyOpen !== header) {
+          currentlyOpen.classList.remove('active');
+        }
+
+        if (currentlyVisible && currentlyVisible !== header.nextElementSibling) {
+          currentlyVisible.classList.remove('show');
+          currentlyVisible.style.display = 'none';
+        }
+
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains('show');
+
+        if (isOpen) {
+          content.classList.remove('show');
+          content.style.display = 'none';
+          header.classList.remove('active');
+        } else {
+          content.classList.add('show');
+          content.style.display = 'block';
+          header.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
