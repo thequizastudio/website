@@ -47,15 +47,14 @@ header {
 
 .telephone {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 1.4em;
   color: #f7f3e9;
-  margin: 15px 0 10px;
+  margin: 5px 0 5px;
 }
 
 .subtitle {
   font-family: 'Playfair Display', serif;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
   color: #f7f3e9;
   margin: 15px 0 10px;
