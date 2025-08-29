@@ -201,6 +201,8 @@ hr {
   padding: 3rem 2rem;
   background: var(--color-light);
   border: 1px solid #E6E6E6;
+  background-color: #0B1E36;
+  color: #FFF;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.06);
 }
