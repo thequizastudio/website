@@ -1,9 +1,12 @@
+/* General */
 body {
     font-family: 'DM Sans', sans-serif;
     margin: 0;
     color: #0B1E36;
     background: #FDFDFD;
 }
+
+/* Header */
 header {
     background: #FDFDFD;
     border-bottom: 1px solid #D9D9D9;
@@ -31,12 +34,51 @@ nav a {
     color: #0B1E36;
     font-weight: bold;
 }
+
+/* Nueva sección hero */
 .hero {
     background: #0B1E36;
     color: #FDFDFD;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 80px 20px;
+    flex-wrap: wrap;
 }
+.hero-text {
+    max-width: 600px;
+}
+.hero-text .site-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.hero-text .site-title .highlight {
+    color: #F2B441;
+}
+.hero-text .main-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.hero-text .description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.hero-image {
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.hero-image .profile-pic {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 1px solid #F2B441;
+    object-fit: cover;
+}
+
+/* Botón dentro de hero */
 .hero .btn {
     background: #F2B441;
     padding: 12px 20px;
@@ -47,6 +89,8 @@ nav a {
     display: inline-block;
     margin-top: 20px;
 }
+
+/* Secciones generales */
 .services, .about, .contact {
     padding: 60px 20px;
     text-align: center;
@@ -80,6 +124,8 @@ nav a {
     color: #0B1E36;
     font-weight: bold;
 }
+
+/* Footer */
 footer {
     background: #0B1E36;
     color: #FDFDFD;
@@ -90,8 +136,32 @@ footer a {
     color: #F2B441;
     text-decoration: none;
 }
+
+/* Terms page */
 .terms {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        order: 1;
+    }
+    .hero-image {
+        order: 2;
+        margin: 20px 0;
+    }
+    .hero-text .main-heading {
+        order: 3;
+    }
+    .hero-text .description {
+        order: 4;
+        margin-top: 15px;
+    }
 }
